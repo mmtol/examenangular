@@ -1,1 +1,32 @@
-<p>cubos-marcas.component works!</p>
+<div>
+    <h1>CUBOS SEGÚN MARCA</h1>
+    <table class="table table-form">
+        <thead>
+            <tr>
+                <th>Id Cubo</th>
+                <th>Nombre</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Color</th>
+                <th>Imagen</th>
+                <th>Precio</th>
+                <th>Valoracion</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(cubo of cubos; track cubo)
+            {
+                <tr>
+                    <td>{{cubo.idCubo}}</td>
+                    <td>{{cubo.nombre}}</td>
+                    <td>{{cubo.modelo}}</td>
+                    <td>{{cubo.marca}}</td>
+                    <td>{{cubo.color}}</td>
+                    <td><img src={{cubo.imagen}}/></td>
+                    <td>{{cubo.precio}}</td>
+                    <td>{{cubo.valoracion}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
