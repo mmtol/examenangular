@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from "@angular/router";
+import { ModuleWithProviders } from "@angular/core";
 import { CubosComponent } from "./components/cubos.component/cubos.component";
 import { CubosMarcasComponent } from "./components/cubos-marcas.component/cubos-marcas.component";
 import { LoginComponent } from "./components/login.component/login.component";
