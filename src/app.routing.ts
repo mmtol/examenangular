@@ -13,7 +13,7 @@ const appRoutes:Routes=
         component:CubosComponent
     },
     {
-        path:"cubosmarcas/:marca",
+        path:"cubosmarca/:marca",
         component:CubosMarcasComponent
     },
     {
