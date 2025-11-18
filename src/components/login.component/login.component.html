@@ -1,6 +1,6 @@
 <div align="center">
     <h1>LOGIN</h1>
-    <h2>Rellena los campos</h2>
+    <h2>Rellena los campos para iniciar sesión</h2>
     <form #loginForm="ngForm">
         <label>Email</label>
         <br/>
@@ -10,6 +10,16 @@
         <br/>
         <input type="text" name="cajaPasswd" #cajaPasswd/>
         <br/><br/>
-        <button (click)="iniciarSesion()">Iniciar sesión</button>
+        <button class="btn btn-info" (click)="iniciarSesion()">Iniciar sesión</button>
     </form>
+    <br/><br/><br/>
+    <h2>Pulse el botón para cerrar sesión</h2>
+    <form #logoutForm="ngForm">
+        <button class="btn btn-danger" (click)="cerrarSesion()">Cerra sesión</button>
+    </form>
+    <br/><br/><br/>
+    @if(mensaje)
+    {
+        <h3>{{mensaje}}</h3>
+    }
 </div>
