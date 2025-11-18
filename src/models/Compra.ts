@@ -1,4 +1,4 @@
-export default class Perfil
+export default class Compra
 {
     constructor(public idCubo:number,
                 public idPedido:number,

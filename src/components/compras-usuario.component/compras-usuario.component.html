@@ -1,1 +1,24 @@
-<p>compras-usuario.component works!</p>
+<div>
+    <h1>COMPRAS DEL USUARIO</h1>
+    <table class="table table-form">
+        <thead>
+            <tr>
+                <th>Id Cubo</th>
+                <th>Id Pedido</th>
+                <th>Id Usuario</th>
+                <th>Fecha pedido</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(compra of compras; track compra)
+            {
+                <tr>
+                    <td>{{compra.idCubo}}</td>
+                    <td>{{compra.idPedido}}</td>
+                    <td>{{compra.idUsuario}}</td>
+                    <td>{{compra.fechaPedido}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
