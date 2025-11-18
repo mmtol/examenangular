@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-compras-usuario.component',
+  selector: 'app-compras-usuario',
   standalone: false,
   templateUrl: './compras-usuario.component.html',
   styleUrl: './compras-usuario.component.css',

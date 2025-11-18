@@ -1,0 +1,39 @@
+img
+{
+    width: 200px;
+    height: 200px;}
+
+h1 
+{
+    color:darkblue;
+    background-color: lightsteelblue;
+}
+
+h2
+{
+    color: palevioletred;
+    background-color: lightpink;
+}
+
+h3
+{
+    color: darkolivegreen;
+    background-color: lightgreen;
+}
+
+div
+{
+    background-color: lightgoldenrodyellow;
+}
+
+p
+{
+    color: orangered;
+    background-color:lightsalmon;
+    font-weight: bold;
+}
+
+ul
+{
+    font-weight: bold;
+}

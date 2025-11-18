@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cubos.component',
+  selector: 'app-cubos',
   standalone: false,
   templateUrl: './cubos.component.html',
   styleUrl: './cubos.component.css',
