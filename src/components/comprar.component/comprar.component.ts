@@ -68,6 +68,7 @@ export class ComprarComponent implements OnInit
       this._service.comprar(token, idCubo, compra).then(response =>
       {
         console.log(response);
+        this._router.navigate(["/comprasusuario"]);
       })
     })
 
