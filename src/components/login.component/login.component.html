@@ -1,1 +1,15 @@
-<p>login.component works!</p>
+<div align="center">
+    <h1>LOGIN</h1>
+    <h2>Rellena los campos</h2>
+    <form #loginForm="ngForm">
+        <label>Email</label>
+        <br/>
+        <input type="text" name="cajaEmail" #cajaEmail/>
+        <br/><br/>
+        <label>Contraseña</label>
+        <br/>
+        <input type="text" name="cajaPasswd" #cajaPasswd/>
+        <br/><br/>
+        <button (click)="iniciarSesion()">Iniciar sesión</button>
+    </form>
+</div>
