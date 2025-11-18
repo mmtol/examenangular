@@ -3,6 +3,7 @@ import { HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "../environments/environment.development";
 import Usuario from "../models/Usuario";
+import Compra from "../models/Compra";
 
 @Injectable()
 export default class ServiceCubos
@@ -114,10 +115,12 @@ export default class ServiceCubos
         return promise;
     }
 
-    comprar(token:any, idCubo:number):Promise<any>
+    comprar(token:any, idCubo:number, compra:Compra):Promise<any>
     {
         let url = environment.api;
         let endPoint = "api/Compra/InsertarPedido/"+idCubo;
+
+        let data = JSON.stringify(compra);
 
         let header = new HttpHeaders();
         header = header.set("Authorization", `Bearer ${token}`);
@@ -125,7 +128,7 @@ export default class ServiceCubos
 
         let promise = new Promise((resolve) =>
         {
-            this._http.post(url+endPoint, {headers:header}).subscribe(response =>
+            this._http.post(url+endPoint, data, {headers:header}).subscribe(response =>
             {
                 resolve(response);
             })

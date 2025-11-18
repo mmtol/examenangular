@@ -1,1 +1,17 @@
-<p>comprar.component works!</p>
+<div>
+    <h1>COMPRAR</h1>
+    <form #comprarForm="ngForm">
+        <h2>Elige el cubo a comprar</h2>
+        <select name="cajaCubo" #cajaCubo (change)="sacarCubo()">
+            @for(cubo of cubos; track cubo)
+            {
+                <option>{{cubo.idCubo}}</option>
+            }
+        </select>
+        <button (click)="comprar()">Comprar</button>
+    </form>
+    @if(cubo)
+    {
+        <img src={{cubo.imagen}}/>
+    }
+</div>
