@@ -1,1 +1,24 @@
-<p>perfil.component works!</p>
+@if(perfil)
+{
+    <div>
+    <h1>PERFIL</h1>
+    <table class="table table-form">
+        <thead>
+            <tr>
+                <th>Id Usuario</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{perfil.idUsuario}}</td>
+                <td>{{perfil.nombre}}</td>
+                <td>{{perfil.email}}</td>
+                <td>{{perfil.pass}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+}
